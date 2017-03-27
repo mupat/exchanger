@@ -19,7 +19,7 @@ server.get('/update', (req, res, next) => {
   })
   .catch(error => {
     console.error('error by updating', error);
-    next(new Error('couldnt update rates'));
+    next(new Error('could not update rates'));
   });
 });
 
@@ -47,7 +47,7 @@ server.get('/exchange/:base/:target/:amount', (req, res, next) => {
   })
   .catch(error => {
     console.error('error by exchange', error);
-    next(new Error('couldnt calculate rates'));
+    next(new Error('could not calculate rates'));
   });
 });
 
