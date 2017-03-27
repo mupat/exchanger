@@ -1,4 +1,4 @@
-.PHONY: all db
+.PHONY: all test
 
 PROJECT = mupat/exchanger
 PORT = 8080
@@ -9,3 +9,6 @@ build:
 
 run:
 	$(DOCKER) -p $(PORT):$(PORT) $(PROJECT)
+
+test:
+	$(DOCKER) $(PROJECT) npm test

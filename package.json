@@ -4,7 +4,7 @@
   "description": "nodejs api to calculate exchange amounts based on ecb rates",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./node_modules/.bin/ava --verbose",
     "start": "node index.js"
   },
   "repository": {
@@ -23,5 +23,8 @@
     "request": "^2.81.0",
     "restify": "^4.3.0",
     "xml-js": "^1.0.2"
+  },
+  "devDependencies": {
+    "ava": "^0.18.2"
   }
 }
