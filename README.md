@@ -1,7 +1,7 @@
 # Exchanger
 Simple NodeJS API to calculate exchange amounts based on ecb rates.
 
-# Usage
+# API Usage
 
 Request:
 ```
@@ -31,4 +31,9 @@ GET '/exchange/JPY/USD/100.45'
 
 > NOTE: The amount must be given in english format and without thousand seperators
 
-# Deployment
+# Get it started
+
+```
+make build
+make run
+```
